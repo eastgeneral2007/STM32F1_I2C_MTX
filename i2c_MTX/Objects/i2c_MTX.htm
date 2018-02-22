@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\i2c_MTX.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\i2c_MTX.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Thu Feb 22 21:25:37 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Thu Feb 22 23:32:18 2018
 <BR><P>
 <H3>Maximum Stack Usage =         92 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -93,8 +93,8 @@ Function Pointers
 Global Symbols
 </H3>
 <P><STRONG><a name="[3b]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
-<BR><BR>[Calls]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
-<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<BR><BR>[Calls]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
 <P><STRONG><a name="[3d]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
@@ -182,8 +182,8 @@ Global Symbols
 <P><STRONG><a name="[84]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
 <P><STRONG><a name="[3e]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
-<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+<BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 </UL>
 
 <P><STRONG><a name="[85]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
@@ -562,7 +562,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(.text)
 </UL>
-<P><STRONG><a name="[56]"></a>i2c_address_direction</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, main.o(i.i2c_address_direction))
+<P><STRONG><a name="[56]"></a>i2c_address_direction</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, i2c_mtx.o(i.i2c_address_direction))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = i2c_address_direction &rArr; I2C_CheckEvent
 </UL>
 <BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Send7bitAddress
@@ -571,7 +571,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_write
 </UL>
 
-<P><STRONG><a name="[59]"></a>i2c_init</STRONG> (Thumb, 106 bytes, Stack size 24 bytes, main.o(i.i2c_init))
+<P><STRONG><a name="[59]"></a>i2c_init</STRONG> (Thumb, 106 bytes, Stack size 24 bytes, i2c_mtx.o(i.i2c_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = i2c_init &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
@@ -583,7 +583,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[5e]"></a>i2c_start</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, main.o(i.i2c_start))
+<P><STRONG><a name="[5e]"></a>i2c_start</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, i2c_mtx.o(i.i2c_start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = i2c_start &rArr; I2C_CheckEvent
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GetFlagStatus
@@ -593,7 +593,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_write
 </UL>
 
-<P><STRONG><a name="[61]"></a>i2c_stop</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, main.o(i.i2c_stop))
+<P><STRONG><a name="[61]"></a>i2c_stop</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, i2c_mtx.o(i.i2c_stop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = i2c_stop &rArr; I2C_GetFlagStatus
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GetFlagStatus
@@ -602,7 +602,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_write
 </UL>
 
-<P><STRONG><a name="[63]"></a>i2c_transmit</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, main.o(i.i2c_transmit))
+<P><STRONG><a name="[63]"></a>i2c_transmit</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, i2c_mtx.o(i.i2c_transmit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = i2c_transmit &rArr; I2C_CheckEvent
 </UL>
 <BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SendData
@@ -611,7 +611,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_write
 </UL>
 
-<P><STRONG><a name="[65]"></a>i2c_write</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, main.o(i.i2c_write))
+<P><STRONG><a name="[65]"></a>i2c_write</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, i2c_mtx.o(i.i2c_write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = i2c_write &rArr; i2c_address_direction &rArr; I2C_CheckEvent
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_transmit

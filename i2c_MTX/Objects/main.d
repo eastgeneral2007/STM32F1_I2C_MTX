@@ -11,4 +11,5 @@
 .\objects\main.o: .\STM32F10x_Stdperiph_Driver\inc\stm32f10x_i2c.h
 .\objects\main.o: .\STM32F10x_Stdperiph_Driver\inc\stm32f10x_rcc.h
 .\objects\main.o: .\STM32F10x_Stdperiph_Driver\inc\misc.h
+.\objects\main.o: .\Inc\i2c_MTX.h
 .\objects\main.o: .\Inc\delay.h
